@@ -16,6 +16,7 @@ protocol HomeViewModelViewDelegate:AnyObject {
 class HomeViewModel {
     
     weak var viewDelegate:HomeViewModelViewDelegate?
+    var service:HomeServiceProtocol = HomeService()
     
     func fetchData(){
         

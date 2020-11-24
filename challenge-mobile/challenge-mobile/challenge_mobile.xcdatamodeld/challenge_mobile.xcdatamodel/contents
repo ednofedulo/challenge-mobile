@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Order" representedClassName=".Order" syncable="YES">
+    <entity name="Order" representedClassName="Order" syncable="YES" codeGenerationType="class">
         <attribute name="order_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="submodel_name" optional="YES" attributeType="String"/>
         <relationship name="signature_details" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Signature" inverseName="order" inverseEntity="Signature"/>
@@ -9,25 +9,25 @@
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="orders" inverseEntity="User"/>
         <relationship name="vehicle_details" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vehicle" inverseName="order" inverseEntity="Vehicle"/>
     </entity>
-    <entity name="Signature" representedClassName=".Signature" syncable="YES">
+    <entity name="Signature" representedClassName="Signature" syncable="YES" codeGenerationType="class">
         <attribute name="additional_franchise" optional="YES" attributeType="String"/>
         <attribute name="months" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="plan_type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="signature_details" inverseEntity="Order"/>
     </entity>
-    <entity name="Status" representedClassName=".Status" syncable="YES">
+    <entity name="Status" representedClassName="Status" syncable="YES" codeGenerationType="class">
         <attribute name="checked" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="code" optional="YES" attributeType="String"/>
         <attribute name="label" optional="YES" attributeType="String"/>
         <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="statuses" inverseEntity="Order"/>
     </entity>
-    <entity name="Summary" representedClassName=".Summary" syncable="YES">
+    <entity name="Summary" representedClassName="Summary" syncable="YES" codeGenerationType="class">
         <attribute name="extras" optional="YES" attributeType="String"/>
         <attribute name="monthly_price" optional="YES" attributeType="String"/>
         <attribute name="total_price" optional="YES" attributeType="String"/>
         <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="summary_values" inverseEntity="Order"/>
     </entity>
-    <entity name="User" representedClassName=".User" syncable="YES">
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
         <attribute name="avatar_url" optional="YES" attributeType="String"/>
         <attribute name="city" optional="YES" attributeType="String"/>
         <attribute name="email" optional="YES" attributeType="String"/>
@@ -42,7 +42,7 @@
             </uniquenessConstraint>
         </uniquenessConstraints>
     </entity>
-    <entity name="Vehicle" representedClassName=".Vehicle" syncable="YES">
+    <entity name="Vehicle" representedClassName="Vehicle" syncable="YES" codeGenerationType="class">
         <attribute name="delivery_delay" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="doors_qtd" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="engine" optional="YES" attributeType="String"/>

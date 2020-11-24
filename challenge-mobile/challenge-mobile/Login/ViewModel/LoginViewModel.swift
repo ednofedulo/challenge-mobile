@@ -24,11 +24,15 @@ class LoginViewModel {
             return
         }
         
-        service.doLogin(email: email, password: password) { (user, error) in
+        service.doLogin(email: email, password: password) { (token, error) in
+            
             guard error == nil else {
                 self.viewDelegate?.showLoginError(msg: error!)
                 return
             }
+            
+            UserDefaults.standard.set(token, forKey: "token")
+            
             DispatchQueue.main.async {
                 self.coordinator?.goToHome()
             }
