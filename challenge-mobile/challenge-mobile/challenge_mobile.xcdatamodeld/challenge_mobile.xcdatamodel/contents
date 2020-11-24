@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Order" representedClassName="Order" syncable="YES" codeGenerationType="class">
+        <attribute name="order_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="submodel_name" optional="YES" attributeType="String"/>
+        <relationship name="signature_details" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Signature"/>
+        <relationship name="statuses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Status"/>
+        <relationship name="summary_values" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Summary"/>
+        <relationship name="vehicle_details" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vehicle"/>
+    </entity>
+    <entity name="Signature" representedClassName="Signature" syncable="YES" codeGenerationType="class">
+        <attribute name="additional_franchise" optional="YES" attributeType="String"/>
+        <attribute name="months" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="plan_type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Status" representedClassName="Status" syncable="YES" codeGenerationType="class">
+        <attribute name="checked" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="code" optional="YES" attributeType="String"/>
+        <attribute name="label" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Summary" representedClassName="Summary" syncable="YES" codeGenerationType="class">
+        <attribute name="extras" optional="YES" attributeType="String"/>
+        <attribute name="monthly_price" optional="YES" attributeType="String"/>
+        <attribute name="total_price" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="avatar_url" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="fullname" optional="YES" attributeType="String"/>
+        <attribute name="state_abbr" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="orders" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="username"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Vehicle" representedClassName="Vehicle" syncable="YES" codeGenerationType="class">
+        <attribute name="delivery_delay" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="doors_qtd" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="engine" optional="YES" attributeType="String"/>
+        <attribute name="engine_type" optional="YES" attributeType="String"/>
+        <attribute name="fuel_type" optional="YES" attributeType="String"/>
+        <attribute name="image_url" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="km" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vehicle_brand" optional="YES" attributeType="String"/>
+        <attribute name="vehicle_model" optional="YES" attributeType="String"/>
+        <attribute name="vehicle_year" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="User" positionX="-64.109375" positionY="-16.02734375" width="128" height="133"/>
+        <element name="Order" positionX="-64.02734375" positionY="123.25" width="128" height="28"/>
+        <element name="Status" positionX="-274.8125" positionY="122.64453125" width="128" height="28"/>
+        <element name="Vehicle" positionX="161.24609375" positionY="122.90625" width="128" height="28"/>
+        <element name="Signature" positionX="-162.15234375" positionY="230.81640625" width="128" height="28"/>
+        <element name="Summary" positionX="44.43359375" positionY="230.78515625" width="128" height="28"/>
+    </elements>
+</model>

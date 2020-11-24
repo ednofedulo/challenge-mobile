@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'challenge-mobile' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'Alamofire'
+  pod 'SDWebImage'
+  # Pods for challenge-mobile
+
+  target 'challenge-mobileTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'challenge-mobileUITests' do
+    # Pods for testing
+  end
+
+end
