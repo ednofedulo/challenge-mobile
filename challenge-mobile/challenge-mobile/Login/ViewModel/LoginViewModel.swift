@@ -9,11 +9,30 @@
 import Foundation
 
 protocol LoginViewModelViewDelegate:AnyObject {
-    func didLoginSuccess()
-    func didLoginError()
+    func showLoginError(msg:String)
 }
 
 class LoginViewModel {
     weak var coordinator: AppCoordinator?
     weak var viewDelegate:LoginViewModelViewDelegate?
+    lazy var service:LoginServiceProtocol = LoginService()
+    
+    func doLogin(email:String, password:String) {
+        
+        guard email.isEmpty == false, password.isEmpty == false else {
+            self.viewDelegate?.showLoginError(msg: "Os campos Email e Senha são obrigatórios")
+            return
+        }
+        
+        service.doLogin(email: email, password: password) { (user, error) in
+            guard error == nil else {
+                self.viewDelegate?.showLoginError(msg: error!)
+                return
+            }
+            DispatchQueue.main.async {
+                self.coordinator?.goToHome()
+            }
+            
+        }
+    }
 }

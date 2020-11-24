@@ -33,6 +33,14 @@ class AppCoordinator: CoordinatorProtocol {
         //navigationController.pushViewController(viewController, animated: true)
     }
     
+    func goToHome(){
+        let homeViewModel = HomeViewModel()
+        let viewController = HomeTableViewController(viewModel: homeViewModel)
+        homeViewModel.viewDelegate = viewController
+        window.rootViewController = navigationController
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
 //    func showDetail(for character: MarvelCharacter) {
 //        let detailViewModel = DetailViewModel(character: character)
 //        let viewController = DetailViewController(viewModel: detailViewModel)

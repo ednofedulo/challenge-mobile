@@ -12,6 +12,9 @@ class LoginViewController: UIViewController {
 
     var viewModel:LoginViewModel?
     
+    @IBOutlet weak var txtEmail:UITextField?
+    @IBOutlet weak var txtPassword:UITextField?
+    
     init(viewModel:LoginViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -23,17 +26,22 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = .systemRed
     }
+    
+    @IBAction func didTapOnBtnLogin(_ sender: Any) {
+        
+        guard let email = txtEmail?.text, let password = txtPassword?.text else {
+            return
+        }
+        
+        self.viewModel?.doLogin(email: email, password: password)
+    }
+    
 }
 
 extension LoginViewController:LoginViewModelViewDelegate {
-    func didLoginSuccess() {
-        
-    }
     
-    func didLoginError() {
-        
+    func showLoginError(msg:String) {
+        self.showAlertMessage(title: "Atenção", msg: msg)
     }
 }

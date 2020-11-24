@@ -7,6 +7,7 @@ target 'challenge-mobile' do
 
   pod 'Alamofire'
   pod 'SDWebImage'
+  pod 'IQKeyboardManagerSwift'
   # Pods for challenge-mobile
 
   target 'challenge-mobileTests' do
