@@ -37,8 +37,8 @@ class AppCoordinator: CoordinatorProtocol {
         let homeViewModel = HomeViewModel()
         let viewController = HomeTableViewController(viewModel: homeViewModel)
         homeViewModel.viewDelegate = viewController
+        self.navigationController = UINavigationController(rootViewController: viewController)
         window.rootViewController = navigationController
-        navigationController?.pushViewController(viewController, animated: true)
     }
     
 //    func showDetail(for character: MarvelCharacter) {

@@ -10,7 +10,6 @@
 		4E1D8C477849D5B2D97877BE /* Pods_challenge_mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26331147287BE82852F02617 /* Pods_challenge_mobile.framework */; };
 		572041E2256D2D8E003D0328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572041E1256D2D8E003D0328 /* AppDelegate.swift */; };
 		572041E4256D2D8E003D0328 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572041E3256D2D8E003D0328 /* SceneDelegate.swift */; };
-		572041EC256D2D8E003D0328 /* challenge_mobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 572041EA256D2D8E003D0328 /* challenge_mobile.xcdatamodeld */; };
 		572041EE256D2D90003D0328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572041ED256D2D90003D0328 /* Assets.xcassets */; };
 		572041F1256D2D90003D0328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572041EF256D2D90003D0328 /* LaunchScreen.storyboard */; };
 		572041FC256D2D90003D0328 /* challenge_mobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572041FB256D2D90003D0328 /* challenge_mobileTests.swift */; };
@@ -27,6 +26,10 @@
 		577F19AF256D3F2C00C93B7C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577F19AE256D3F2C00C93B7C /* LoginViewModel.swift */; };
 		577F1A16256D558400C93B7C /* CodingUserInfoKey+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577F1A15256D558400C93B7C /* CodingUserInfoKey+extension.swift */; };
 		823176E1A1806D26B86C2E58 /* Pods_challenge_mobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731EAC13DAFE7C2C88B2C72E /* Pods_challenge_mobileTests.framework */; };
+		A5948DCA256DD2AD00A89655 /* OrdersOverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5948DC9256DD2AD00A89655 /* OrdersOverviewTableViewCell.swift */; };
+		A5948DCD256DD9FA00A89655 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5948DCC256DD9FA00A89655 /* Order.swift */; };
+		A5948DD1256DF4F700A89655 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5948DD0256DF4F700A89655 /* HomeModel.swift */; };
+		A5E3BB2A256DB89B0019CF62 /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3BB29256DB89B0019CF62 /* UserInfoTableViewCell.swift */; };
 		B265B9F40C21AB0E0CF30464 /* Pods_challenge_mobile_challenge_mobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE77D9E9B2002DC5E576A77 /* Pods_challenge_mobile_challenge_mobileUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +56,6 @@
 		572041DE256D2D8E003D0328 /* challenge-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "challenge-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		572041E1256D2D8E003D0328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		572041E3256D2D8E003D0328 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		572041EB256D2D8E003D0328 /* challenge_mobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = challenge_mobile.xcdatamodel; sourceTree = "<group>"; };
 		572041ED256D2D90003D0328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		572041F0256D2D90003D0328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		572041F2256D2D90003D0328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +82,10 @@
 		731EAC13DAFE7C2C88B2C72E /* Pods_challenge_mobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_challenge_mobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9271AD62D3A8E82B748A6383 /* Pods-challenge-mobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-mobileTests.release.xcconfig"; path = "Target Support Files/Pods-challenge-mobileTests/Pods-challenge-mobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		93FFB245B191BE293A5B6006 /* Pods-challenge-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-mobile.release.xcconfig"; path = "Target Support Files/Pods-challenge-mobile/Pods-challenge-mobile.release.xcconfig"; sourceTree = "<group>"; };
+		A5948DC9256DD2AD00A89655 /* OrdersOverviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersOverviewTableViewCell.swift; sourceTree = "<group>"; };
+		A5948DCC256DD9FA00A89655 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		A5948DD0256DF4F700A89655 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		A5E3BB29256DB89B0019CF62 /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
 		EEE4CF478A6DDFE289A7673B /* Pods-challenge-mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-mobile.debug.xcconfig"; path = "Target Support Files/Pods-challenge-mobile/Pods-challenge-mobile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,7 +166,6 @@
 				572041ED256D2D90003D0328 /* Assets.xcassets */,
 				572041EF256D2D90003D0328 /* LaunchScreen.storyboard */,
 				572041F2256D2D90003D0328 /* Info.plist */,
-				572041EA256D2D8E003D0328 /* challenge_mobile.xcdatamodeld */,
 				577F19A1256D3E4C00C93B7C /* AppCoordinator.swift */,
 			);
 			path = "challenge-mobile";
@@ -230,6 +235,8 @@
 		577F19A4256D3E8700C93B7C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A5948DCB256DD2BB00A89655 /* Model */,
+				A5E3BB28256DB76C0019CF62 /* Cell */,
 				576D8B17256D8D750011FCD7 /* Service */,
 				576D8B0B256D6F650011FCD7 /* ViewModel */,
 				576D8B0A256D6F5D0011FCD7 /* View */,
@@ -300,6 +307,24 @@
 				731EAC13DAFE7C2C88B2C72E /* Pods_challenge_mobileTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5948DCB256DD2BB00A89655 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5948DCC256DD9FA00A89655 /* Order.swift */,
+				A5948DD0256DF4F700A89655 /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5E3BB28256DB76C0019CF62 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A5E3BB29256DB89B0019CF62 /* UserInfoTableViewCell.swift */,
+				A5948DC9256DD2AD00A89655 /* OrdersOverviewTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -543,15 +568,18 @@
 			files = (
 				577F1A16256D558400C93B7C /* CodingUserInfoKey+extension.swift in Sources */,
 				577F19AC256D3F0E00C93B7C /* LoginViewController.swift in Sources */,
+				A5E3BB2A256DB89B0019CF62 /* UserInfoTableViewCell.swift in Sources */,
 				576D8B11256D70F00011FCD7 /* UIViewController+extension.swift in Sources */,
 				576D8B0D256D6F870011FCD7 /* HomeTableViewController.swift in Sources */,
+				A5948DCA256DD2AD00A89655 /* OrdersOverviewTableViewCell.swift in Sources */,
 				572041E2256D2D8E003D0328 /* AppDelegate.swift in Sources */,
 				577F19A2256D3E4C00C93B7C /* AppCoordinator.swift in Sources */,
+				A5948DD1256DF4F700A89655 /* HomeModel.swift in Sources */,
 				576D8B13256D73BF0011FCD7 /* LoginService.swift in Sources */,
 				572041E4256D2D8E003D0328 /* SceneDelegate.swift in Sources */,
 				576D8B19256D8D7F0011FCD7 /* HomeService.swift in Sources */,
-				572041EC256D2D8E003D0328 /* challenge_mobile.xcdatamodeld in Sources */,
 				576D8B0F256D6F950011FCD7 /* HomeViewModel.swift in Sources */,
+				A5948DCD256DD9FA00A89655 /* Order.swift in Sources */,
 				577F19AF256D3F2C00C93B7C /* LoginViewModel.swift in Sources */,
 				576D8B16256D89820011FCD7 /* LoginModel.swift in Sources */,
 			);
@@ -874,19 +902,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		572041EA256D2D8E003D0328 /* challenge_mobile.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				572041EB256D2D8E003D0328 /* challenge_mobile.xcdatamodel */,
-			);
-			currentVersion = 572041EB256D2D8E003D0328 /* challenge_mobile.xcdatamodel */;
-			path = challenge_mobile.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 572041D6256D2D8E003D0328 /* Project object */;
 }

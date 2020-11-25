@@ -6,7 +6,7 @@ target 'challenge-mobile' do
   use_frameworks!
 
   pod 'Alamofire'
-  pod 'SDWebImage'
+  pod 'Kingfisher'
   pod 'IQKeyboardManagerSwift'
   # Pods for challenge-mobile
 

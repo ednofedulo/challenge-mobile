@@ -15,10 +15,21 @@ protocol HomeViewModelViewDelegate:AnyObject {
 
 class HomeViewModel {
     
-    weak var viewDelegate:HomeViewModelViewDelegate?
-    var service:HomeServiceProtocol = HomeService()
+    var viewDelegate:HomeViewModelViewDelegate?
+    lazy var service:HomeServiceProtocol = HomeService()
+    var model:HomeModel?
     
     func fetchData(){
+        
+        service.fetchData { (homeModel, error) in
+            guard error == nil else {
+                self.viewDelegate?.didFetchDataFromAPIError(sender: self)
+                return
+            }
+            
+            self.model = homeModel
+            self.viewDelegate?.didFetchDataFromAPISuccess(sender: self)
+        }
         
     }
 }

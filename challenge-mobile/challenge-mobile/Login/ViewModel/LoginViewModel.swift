@@ -14,7 +14,7 @@ protocol LoginViewModelViewDelegate:AnyObject {
 
 class LoginViewModel {
     weak var coordinator: AppCoordinator?
-    weak var viewDelegate:LoginViewModelViewDelegate?
+    var viewDelegate:LoginViewModelViewDelegate?
     lazy var service:LoginServiceProtocol = LoginService()
     
     func doLogin(email:String, password:String) {

@@ -7,15 +7,25 @@
 //
 
 import Foundation
+import Alamofire
 
 protocol HomeServiceProtocol:AnyObject {
-    func fetchData()
+    func fetchData(completionHandler: @escaping(_ homeModel: HomeModel?, _ error: String?) -> Void)
 }
 
 class HomeService:HomeServiceProtocol {
-    func fetchData() {
+    func fetchData(completionHandler: @escaping (HomeModel?, String?) -> Void) {
         guard let token = UserDefaults.standard.string(forKey: "token") else { return }
         
+        let url = "https://challenge-mobile-api.liveonsolutions.com/api/v1/user/profile?token=\(token)"
         
+        AF.request(url).responseDecodable(of: HomeModel.self) { response in
+            switch response.result {
+            case let .success(homeModel):
+                completionHandler(homeModel, nil)
+            case .failure(_):
+                completionHandler(nil, "Erro ao obter dados")
+            }
+        }
     }
 }
