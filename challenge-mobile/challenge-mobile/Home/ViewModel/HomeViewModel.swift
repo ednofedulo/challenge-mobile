@@ -15,6 +15,7 @@ protocol HomeViewModelViewDelegate:AnyObject {
 
 class HomeViewModel {
     
+    weak var coordinator:AppCoordinator?
     var viewDelegate:HomeViewModelViewDelegate?
     lazy var service:HomeServiceProtocol = HomeService()
     var model:HomeModel?
@@ -31,5 +32,14 @@ class HomeViewModel {
             self.viewDelegate?.didFetchDataFromAPISuccess(sender: self)
         }
         
+    }
+    
+    func doLogout(){
+        UserDefaults.standard.removeObject(forKey: "token")
+        self.coordinator?.start()
+    }
+    
+    func goToOrdersList(){
+        self.coordinator?.goToOrdersList(orders: model!.orders!)
     }
 }

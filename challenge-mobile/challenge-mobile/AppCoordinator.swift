@@ -25,26 +25,38 @@ class AppCoordinator: CoordinatorProtocol {
     }
     
     func start() {
+        
+        guard UserDefaults.standard.string(forKey: "token") == nil else {
+            goToHome()
+            return
+        }
+        
         let viewModel = LoginViewModel()
         viewModel.coordinator = self
         let viewController = LoginViewController(viewModel: viewModel)
         viewModel.viewDelegate = viewController
+        navigationController = nil
         window.rootViewController = viewController
-        //navigationController.pushViewController(viewController, animated: true)
     }
     
     func goToHome(){
         let homeViewModel = HomeViewModel()
+        homeViewModel.coordinator = self
         let viewController = HomeTableViewController(viewModel: homeViewModel)
         homeViewModel.viewDelegate = viewController
         self.navigationController = UINavigationController(rootViewController: viewController)
         window.rootViewController = navigationController
     }
     
-//    func showDetail(for character: MarvelCharacter) {
-//        let detailViewModel = DetailViewModel(character: character)
-//        let viewController = DetailViewController(viewModel: detailViewModel)
-//        detailViewModel.viewDelegate = viewController
-//        navigationController.pushViewController(viewController, animated: true)
-//    }
+    func goToOrdersList(orders:[Order]){
+        let viewModel = OrdersViewModel(orders: orders)
+        viewModel.coordinator = self
+        let viewController = OrdersTableViewController(viewModel: viewModel)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func goToOrderDetail(order:Order) {
+        
+    }
+
 }

@@ -26,6 +26,8 @@
 		577F19AF256D3F2C00C93B7C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577F19AE256D3F2C00C93B7C /* LoginViewModel.swift */; };
 		577F1A16256D558400C93B7C /* CodingUserInfoKey+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577F1A15256D558400C93B7C /* CodingUserInfoKey+extension.swift */; };
 		823176E1A1806D26B86C2E58 /* Pods_challenge_mobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731EAC13DAFE7C2C88B2C72E /* Pods_challenge_mobileTests.framework */; };
+		A57274C3256E59E5002518FB /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57274C2256E59E5002518FB /* OrdersTableViewController.swift */; };
+		A57274C5256E5A4C002518FB /* OrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57274C4256E5A4C002518FB /* OrdersViewModel.swift */; };
 		A5948DCA256DD2AD00A89655 /* OrdersOverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5948DC9256DD2AD00A89655 /* OrdersOverviewTableViewCell.swift */; };
 		A5948DCD256DD9FA00A89655 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5948DCC256DD9FA00A89655 /* Order.swift */; };
 		A5948DD1256DF4F700A89655 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5948DD0256DF4F700A89655 /* HomeModel.swift */; };
@@ -82,6 +84,8 @@
 		731EAC13DAFE7C2C88B2C72E /* Pods_challenge_mobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_challenge_mobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9271AD62D3A8E82B748A6383 /* Pods-challenge-mobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-mobileTests.release.xcconfig"; path = "Target Support Files/Pods-challenge-mobileTests/Pods-challenge-mobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		93FFB245B191BE293A5B6006 /* Pods-challenge-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-mobile.release.xcconfig"; path = "Target Support Files/Pods-challenge-mobile/Pods-challenge-mobile.release.xcconfig"; sourceTree = "<group>"; };
+		A57274C2256E59E5002518FB /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		A57274C4256E5A4C002518FB /* OrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewModel.swift; sourceTree = "<group>"; };
 		A5948DC9256DD2AD00A89655 /* OrdersOverviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersOverviewTableViewCell.swift; sourceTree = "<group>"; };
 		A5948DCC256DD9FA00A89655 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		A5948DD0256DF4F700A89655 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
@@ -247,6 +251,8 @@
 		577F19A5256D3E8E00C93B7C /* Orders */ = {
 			isa = PBXGroup;
 			children = (
+				A57274C1256E59BD002518FB /* ViewModel */,
+				A57274C0256E59AE002518FB /* View */,
 			);
 			path = Orders;
 			sourceTree = "<group>";
@@ -254,6 +260,8 @@
 		577F19A6256D3E9A00C93B7C /* OrderDetail */ = {
 			isa = PBXGroup;
 			children = (
+				A57274C7256E6074002518FB /* ViewModel */,
+				A57274C6256E606E002518FB /* View */,
 			);
 			path = OrderDetail;
 			sourceTree = "<group>";
@@ -307,6 +315,36 @@
 				731EAC13DAFE7C2C88B2C72E /* Pods_challenge_mobileTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A57274C0256E59AE002518FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A57274C2256E59E5002518FB /* OrdersTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A57274C1256E59BD002518FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A57274C4256E5A4C002518FB /* OrdersViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A57274C6256E606E002518FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A57274C7256E6074002518FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A5948DCB256DD2BB00A89655 /* Model */ = {
@@ -573,6 +611,7 @@
 				576D8B0D256D6F870011FCD7 /* HomeTableViewController.swift in Sources */,
 				A5948DCA256DD2AD00A89655 /* OrdersOverviewTableViewCell.swift in Sources */,
 				572041E2256D2D8E003D0328 /* AppDelegate.swift in Sources */,
+				A57274C5256E5A4C002518FB /* OrdersViewModel.swift in Sources */,
 				577F19A2256D3E4C00C93B7C /* AppCoordinator.swift in Sources */,
 				A5948DD1256DF4F700A89655 /* HomeModel.swift in Sources */,
 				576D8B13256D73BF0011FCD7 /* LoginService.swift in Sources */,
@@ -582,6 +621,7 @@
 				A5948DCD256DD9FA00A89655 /* Order.swift in Sources */,
 				577F19AF256D3F2C00C93B7C /* LoginViewModel.swift in Sources */,
 				576D8B16256D89820011FCD7 /* LoginModel.swift in Sources */,
+				A57274C3256E59E5002518FB /* OrdersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

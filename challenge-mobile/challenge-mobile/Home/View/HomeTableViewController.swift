@@ -79,6 +79,19 @@ class HomeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return section == 1 ? "Status de Acompanhamento" : nil
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard indexPath.section == 2 else { return }
+        
+        switch indexPath.row {
+        case 0:
+            self.viewModel?.goToOrdersList()
+        case 1:
+            self.viewModel?.doLogout()
+        default:
+            return
+        }
+    }
 }
 
 
