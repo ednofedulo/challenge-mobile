@@ -32,8 +32,6 @@ class OrdersTableViewController: UITableViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "orderCell")
     }
 
-    // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.viewModel?.orders?.count ?? 0
     }

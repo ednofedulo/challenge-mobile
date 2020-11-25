@@ -25,6 +25,14 @@
 		577F19AD256D3F0E00C93B7C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 577F19AB256D3F0E00C93B7C /* LoginViewController.xib */; };
 		577F19AF256D3F2C00C93B7C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577F19AE256D3F2C00C93B7C /* LoginViewModel.swift */; };
 		577F1A16256D558400C93B7C /* CodingUserInfoKey+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577F1A15256D558400C93B7C /* CodingUserInfoKey+extension.swift */; };
+		5786BEC3256E7DA900A64FAC /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786BEC2256E7DA900A64FAC /* BannerView.swift */; };
+		5786BEC6256E846200A64FAC /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786BEC4256E846200A64FAC /* OrderDetailViewController.swift */; };
+		5786BEC7256E846200A64FAC /* OrderDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5786BEC5256E846200A64FAC /* OrderDetailViewController.xib */; };
+		5786BEC9256E894100A64FAC /* OrderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786BEC8256E894100A64FAC /* OrderDetailViewModel.swift */; };
+		5786BECC256E8AF700A64FAC /* OrderDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786BECB256E8AF700A64FAC /* OrderDetailsModel.swift */; };
+		5786BECF256E8C5800A64FAC /* OrderDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786BECE256E8C5800A64FAC /* OrderDetailsService.swift */; };
+		5786BED3256E958A00A64FAC /* DetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5786BED2256E958A00A64FAC /* DetailsView.xib */; };
+		5786BED5256E9ECA00A64FAC /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786BED4256E9ECA00A64FAC /* DetailsView.swift */; };
 		823176E1A1806D26B86C2E58 /* Pods_challenge_mobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731EAC13DAFE7C2C88B2C72E /* Pods_challenge_mobileTests.framework */; };
 		A57274C3256E59E5002518FB /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57274C2256E59E5002518FB /* OrdersTableViewController.swift */; };
 		A57274C5256E5A4C002518FB /* OrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57274C4256E5A4C002518FB /* OrdersViewModel.swift */; };
@@ -78,6 +86,14 @@
 		577F19AB256D3F0E00C93B7C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		577F19AE256D3F2C00C93B7C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		577F1A15256D558400C93B7C /* CodingUserInfoKey+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+extension.swift"; sourceTree = "<group>"; };
+		5786BEC2256E7DA900A64FAC /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BannerView.swift; path = "challenge-mobile/Home/Service/BannerView.swift"; sourceTree = SOURCE_ROOT; };
+		5786BEC4256E846200A64FAC /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderDetailViewController.swift; path = "challenge-mobile/Home/Service/OrderDetailViewController.swift"; sourceTree = SOURCE_ROOT; };
+		5786BEC5256E846200A64FAC /* OrderDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = OrderDetailViewController.xib; path = "challenge-mobile/Home/Service/OrderDetailViewController.xib"; sourceTree = SOURCE_ROOT; };
+		5786BEC8256E894100A64FAC /* OrderDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderDetailViewModel.swift; path = "challenge-mobile/Home/Service/OrderDetailViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		5786BECB256E8AF700A64FAC /* OrderDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsModel.swift; sourceTree = "<group>"; };
+		5786BECE256E8C5800A64FAC /* OrderDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsService.swift; sourceTree = "<group>"; };
+		5786BED2256E958A00A64FAC /* DetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailsView.xib; path = "challenge-mobile/OrderDetail/Service/DetailsView.xib"; sourceTree = SOURCE_ROOT; };
+		5786BED4256E9ECA00A64FAC /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailsView.swift; path = "challenge-mobile/OrderDetail/Service/DetailsView.swift"; sourceTree = SOURCE_ROOT; };
 		5DE77D9E9B2002DC5E576A77 /* Pods_challenge_mobile_challenge_mobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_challenge_mobile_challenge_mobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E71450BB75D4E7037F7D4C9 /* Pods-challenge-mobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-mobileTests.debug.xcconfig"; path = "Target Support Files/Pods-challenge-mobileTests/Pods-challenge-mobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7128C9CC6F6A497B07993197 /* Pods-challenge-mobile-challenge-mobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-challenge-mobile-challenge-mobileUITests.release.xcconfig"; path = "Target Support Files/Pods-challenge-mobile-challenge-mobileUITests/Pods-challenge-mobile-challenge-mobileUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -260,6 +276,8 @@
 		577F19A6256D3E9A00C93B7C /* OrderDetail */ = {
 			isa = PBXGroup;
 			children = (
+				5786BECD256E8C2500A64FAC /* Service */,
+				5786BECA256E8ADE00A64FAC /* Model */,
 				A57274C7256E6074002518FB /* ViewModel */,
 				A57274C6256E606E002518FB /* View */,
 			);
@@ -307,6 +325,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		5786BECA256E8ADE00A64FAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5786BECB256E8AF700A64FAC /* OrderDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5786BECD256E8C2500A64FAC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5786BECE256E8C5800A64FAC /* OrderDetailsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		699F25C51F4B7FC72B9A7B49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +370,11 @@
 		A57274C6256E606E002518FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5786BEC2256E7DA900A64FAC /* BannerView.swift */,
+				5786BEC4256E846200A64FAC /* OrderDetailViewController.swift */,
+				5786BEC5256E846200A64FAC /* OrderDetailViewController.xib */,
+				5786BED2256E958A00A64FAC /* DetailsView.xib */,
+				5786BED4256E9ECA00A64FAC /* DetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,6 +382,7 @@
 		A57274C7256E6074002518FB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5786BEC8256E894100A64FAC /* OrderDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -474,9 +514,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5786BEC7256E846200A64FAC /* OrderDetailViewController.xib in Resources */,
 				572041F1256D2D90003D0328 /* LaunchScreen.storyboard in Resources */,
 				572041EE256D2D90003D0328 /* Assets.xcassets in Resources */,
 				577F19AD256D3F0E00C93B7C /* LoginViewController.xib in Resources */,
+				5786BED3256E958A00A64FAC /* DetailsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,17 +646,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5786BECF256E8C5800A64FAC /* OrderDetailsService.swift in Sources */,
 				577F1A16256D558400C93B7C /* CodingUserInfoKey+extension.swift in Sources */,
 				577F19AC256D3F0E00C93B7C /* LoginViewController.swift in Sources */,
+				5786BEC3256E7DA900A64FAC /* BannerView.swift in Sources */,
 				A5E3BB2A256DB89B0019CF62 /* UserInfoTableViewCell.swift in Sources */,
 				576D8B11256D70F00011FCD7 /* UIViewController+extension.swift in Sources */,
+				5786BECC256E8AF700A64FAC /* OrderDetailsModel.swift in Sources */,
 				576D8B0D256D6F870011FCD7 /* HomeTableViewController.swift in Sources */,
 				A5948DCA256DD2AD00A89655 /* OrdersOverviewTableViewCell.swift in Sources */,
 				572041E2256D2D8E003D0328 /* AppDelegate.swift in Sources */,
+				5786BEC6256E846200A64FAC /* OrderDetailViewController.swift in Sources */,
 				A57274C5256E5A4C002518FB /* OrdersViewModel.swift in Sources */,
+				5786BEC9256E894100A64FAC /* OrderDetailViewModel.swift in Sources */,
 				577F19A2256D3E4C00C93B7C /* AppCoordinator.swift in Sources */,
 				A5948DD1256DF4F700A89655 /* HomeModel.swift in Sources */,
 				576D8B13256D73BF0011FCD7 /* LoginService.swift in Sources */,
+				5786BED5256E9ECA00A64FAC /* DetailsView.swift in Sources */,
 				572041E4256D2D8E003D0328 /* SceneDelegate.swift in Sources */,
 				576D8B19256D8D7F0011FCD7 /* HomeService.swift in Sources */,
 				576D8B0F256D6F950011FCD7 /* HomeViewModel.swift in Sources */,

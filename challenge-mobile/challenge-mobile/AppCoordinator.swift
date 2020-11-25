@@ -55,8 +55,11 @@ class AppCoordinator: CoordinatorProtocol {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
-    func goToOrderDetail(order:Order) {
-        
+    func goToOrderDetail(order_id:Int) {
+        let viewModel = OrderDetailViewModel(order_id: order_id)
+        let viewController = OrderDetailViewController(viewModel: viewModel)
+        viewModel.viewDelegate = viewController
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 
 }

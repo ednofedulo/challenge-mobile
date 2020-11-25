@@ -28,6 +28,6 @@ class OrdersViewModel {
     func didSelectOrder(at index:Int){
         guard let order = getOrder(at: index) else { return }
         
-        coordinator?.goToOrderDetail(order: order)
+        coordinator?.goToOrderDetail(order_id: order.order_id!)
     }
 }
